@@ -39,6 +39,7 @@
                     ".jsx"
                 ]
             }
-        ]
+        ],
+        "object-curly-newline": 0
     }
 }
