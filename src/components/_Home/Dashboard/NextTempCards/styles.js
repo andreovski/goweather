@@ -31,5 +31,10 @@ export const Container = styled.div`
   span:nth-child(3) {
     white-space: nowrap;
     line-height: 1.25rem;
+
+    img {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
   }
 `;

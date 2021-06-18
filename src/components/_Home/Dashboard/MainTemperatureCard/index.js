@@ -1,4 +1,4 @@
-import mostlyCloudIcon from '../../../assets/climateIcons/nt_mostlycloudy@3x.png';
+import mostlyCloudIcon from '../../../../assets/climateIcons/mostlycloudy.svg';
 
 import {
   Container,

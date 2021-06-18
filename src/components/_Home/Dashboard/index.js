@@ -1,7 +1,10 @@
-import TemperatureCard from '../TemperatureCard';
-import TemperatureInHoursCard from '../TemperatureInHoursCard';
+import TemperatureCard from './MainTemperatureCard';
+import TemperatureInHoursCard from './NextTempCards/CardHoursTemperature';
+import TemperatureInDaysCard from './NextTempCards/CardDaysTemperature';
 import SearchInput from '../SearchInput';
-import { Container, Content, Main, LocationIcon } from './styles';
+
+import { Container } from '../../../styles/global';
+import { Content, Main, LocationIcon } from './styles';
 
 function Dashboard() {
   return (
@@ -18,15 +21,25 @@ function Dashboard() {
         </div>
         <Content>
           <div className="temperatureCards">
-            <TemperatureInHoursCard />
-            <TemperatureInHoursCard />
-            <TemperatureInHoursCard />
+            <span>
+              <p>Next hours</p>
+            </span>
+            <div>
+              <TemperatureInHoursCard />
+              <TemperatureInHoursCard />
+              <TemperatureInHoursCard />
+            </div>
           </div>
           <TemperatureCard />
           <div className="temperatureCards">
-            <TemperatureInHoursCard />
-            <TemperatureInHoursCard />
-            <TemperatureInHoursCard />
+            <span>
+              <p>Next days</p>
+            </span>
+            <div>
+              <TemperatureInDaysCard />
+              <TemperatureInDaysCard />
+              <TemperatureInDaysCard />
+            </div>
           </div>
         </Content>
       </Main>
