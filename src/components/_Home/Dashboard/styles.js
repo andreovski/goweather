@@ -27,6 +27,22 @@ export const Main = styled.div`
 
   .temperatureCards {
     display: flex;
+    flex-direction: column;
+
+    > span {
+      width: 100%;
+
+      font-size: 1.123rem;
+      text-align: center;
+      font-weight: 300;
+
+      position: relative;
+      bottom: 1rem;
+    }
+
+    > div {
+      display: flex;
+    }
 
     :first-child {
       @media (max-width: 920px) {

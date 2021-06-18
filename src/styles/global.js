@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   :root {
     --main: #FF4831;
     --background: #F2F3F5;
@@ -56,4 +56,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default GlobalStyle;
+export const Container = styled.div`
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+`;
